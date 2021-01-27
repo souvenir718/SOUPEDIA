@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/souvenir718/movie_app/static/css/main.1a02a01d.chunk.css",
+    "main.js": "/souvenir718/movie_app/static/js/main.6e4ceb15.chunk.js",
+    "main.js.map": "/souvenir718/movie_app/static/js/main.6e4ceb15.chunk.js.map",
+    "runtime-main.js": "/souvenir718/movie_app/static/js/runtime-main.e0d83479.js",
+    "runtime-main.js.map": "/souvenir718/movie_app/static/js/runtime-main.e0d83479.js.map",
+    "static/js/2.da4374dc.chunk.js": "/souvenir718/movie_app/static/js/2.da4374dc.chunk.js",
+    "static/js/2.da4374dc.chunk.js.map": "/souvenir718/movie_app/static/js/2.da4374dc.chunk.js.map",
+    "index.html": "/souvenir718/movie_app/index.html",
+    "static/css/main.1a02a01d.chunk.css.map": "/souvenir718/movie_app/static/css/main.1a02a01d.chunk.css.map",
+    "static/js/2.da4374dc.chunk.js.LICENSE.txt": "/souvenir718/movie_app/static/js/2.da4374dc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0d83479.js",
+    "static/js/2.da4374dc.chunk.js",
+    "static/css/main.1a02a01d.chunk.css",
+    "static/js/main.6e4ceb15.chunk.js"
+  ]
+}
