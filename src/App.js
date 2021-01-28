@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import About from './routes/About';
+import Detail from './routes/Detail';
 import Home from './routes/Home';
 /*
 https://dribbble.com/shots/2442798-Movie-Application
@@ -103,6 +104,7 @@ function App() {
         <HashRouter>
             <Navigation />
             <Route path="/" exact={true} component={Home} />
+            <Route path="/movie/:id" component={Detail} />
             <Route path="/about" component={About} />
         </HashRouter>
     );
