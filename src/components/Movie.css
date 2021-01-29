@@ -1,8 +1,10 @@
 .movie {
     background-color: white;
     width: 40rem;
-    height: 18rem;
+    height: 16rem;
+    display: flex;
     position: relative;
+    margin-bottom: 5rem;
 }
 
 .movie .movie__poster {
@@ -13,9 +15,28 @@
     position: absolute;
     width: 10rem;
     left: 1rem;
-    top: -2rem;
+    top: -1.5rem;
+    padding-left: 1rem;
 }
 
 .movie .movie__data {
+    padding-top: 0.5rem;
     width: 25rem;
+    padding-right: 2rem;
+}
+.movie__summary,
+.movie__rating {
+    color: rgb(173, 169, 169);
+}
+
+.geners span {
+    color: rgb(173, 169, 169);
+    margin-right: 1rem;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
 }
