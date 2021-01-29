@@ -1,0 +1,21 @@
+.movie {
+    background-color: white;
+    width: 40rem;
+    height: 18rem;
+    position: relative;
+}
+
+.movie .movie__poster {
+    width: 15rem;
+}
+
+.movie .movie__poster img {
+    position: absolute;
+    width: 10rem;
+    left: 1rem;
+    top: -2rem;
+}
+
+.movie .movie__data {
+    width: 25rem;
+}
