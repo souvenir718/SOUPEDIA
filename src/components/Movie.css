@@ -29,6 +29,10 @@
     color: rgb(173, 169, 169);
 }
 
+.movie__rating span {
+    font-size: 1.15rem;
+}
+
 .geners span {
     color: rgb(173, 169, 169);
     margin-right: 1rem;

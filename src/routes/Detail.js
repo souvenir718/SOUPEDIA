@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './Detail.css';
 class Detail extends Component {
     componentDidMount() {
         const { location, history } = this.props;
@@ -8,8 +8,18 @@ class Detail extends Component {
         }
     }
     render() {
-        const { location } = this.props;
-        return <div></div>;
+        const {
+            location: {
+                state: { year, title, summary, poster, rating },
+            },
+        } = this.props;
+        return (
+            <div className="detail__container">
+                <div className="detail__poster">
+                    <img src={poster} alt={title} title={title} />
+                </div>
+            </div>
+        );
     }
 }
 

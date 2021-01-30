@@ -11,11 +11,11 @@ class Home extends Component {
 
     getMovies = async () => {
         const {
-            data: {
-                data: { movies },
-            },
-        } = await axios.get('https://yts-proxy.now.sh/list_movies.json?sort_by=rating');
-        this.setState({ movies, isLoading: false });
+            data: { results },
+        } = await axios.get(
+            'https://api.themoviedb.org/3/movie/now_playing?api_key=ffe228ac6463158a2c4230ff91248853&language=en-US&page=1'
+        );
+        this.setState({ movies: results, isLoading: false });
     };
 
     componentDidMount() {
@@ -35,12 +35,12 @@ class Home extends Component {
                             <Movie
                                 key={movie.id}
                                 id={movie.id}
-                                year={movie.year}
+                                year={movie.release_date}
                                 title={movie.title}
-                                summary={movie.summary}
-                                poster={movie.medium_cover_image}
-                                genres={movie.genres}
-                                rating={movie.rating}
+                                summary={movie.overview}
+                                poster={movie.poster_path}
+                                rating={movie.vote_average}
+                                backdrop_path={movie.backdrop_path}
                             />
                         ))}
                     </div>
