@@ -14,7 +14,7 @@ function Movie({ id, year, title, summary, poster, backdrop_path, rating }) {
                     to={{
                         pathname: `/movie/${id}`,
                         state: {
-                            year,
+                            onlyYear,
                             title,
                             summary,
                             poster,

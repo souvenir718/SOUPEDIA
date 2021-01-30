@@ -10,13 +10,20 @@ class Detail extends Component {
     render() {
         const {
             location: {
-                state: { year, title, summary, poster, rating },
+                state: { onlyYear, title, summary, poster, rating, backdrop_path },
             },
         } = this.props;
         return (
             <div className="detail__container">
+                <div className="detail__backdrop">
+                    <img src={`https://image.tmdb.org/t/p/w500${backdrop_path}`} alt={title} title={title} />
+                </div>
+
                 <div className="detail__poster">
-                    <img src={poster} alt={title} title={title} />
+                    <img src={`https://image.tmdb.org/t/p/w500${poster}`} alt={title} title={title} />
+                    <div className="detail__header">
+                        <h2>{title}</h2>
+                    </div>
                 </div>
             </div>
         );

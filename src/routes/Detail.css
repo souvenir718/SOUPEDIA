@@ -1,0 +1,26 @@
+.detail__poster {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.detail__poster img {
+    width: 10rem;
+    border: 0.5rem solid white;
+}
+
+.detail__header {
+    width: 20%;
+    padding-left: 3rem;
+}
+
+.detail__backdrop {
+    display: flex;
+    justify-content: center;
+}
+
+.detail__backdrop img {
+    width: 65%;
+    height: 20rem;
+}
