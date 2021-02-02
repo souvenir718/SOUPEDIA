@@ -44,7 +44,42 @@
     background-color: antiquewhite;
 }
 
-/* .detail__backdrop img {
-    width: 65%;
-    height: 20rem;
-} */
+.detail__contents {
+    width: 45%;
+    padding: 1rem;
+    border: 0.05px darkgrey solid;
+    border-radius: 0.5rem;
+    margin: 2rem auto;
+    background-color: white;
+}
+
+.data_homepage {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.data_homepage:hover {
+    font-size: 1.4rem;
+}
+
+.basic_info {
+    font-size: 1.4rem;
+}
+
+.info__title {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+.info__date_country {
+    font-size: 1.1rem;
+    color: darkgrey;
+}
+
+.info__genre {
+    font-weight: 500;
+}
+
+.info__overview {
+    padding-bottom: 2.5rem;
+    border-bottom: 0.1px solid darkgrey;
+}
