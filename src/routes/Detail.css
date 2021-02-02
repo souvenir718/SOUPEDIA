@@ -1,3 +1,7 @@
+/* .detail__container {
+    margin-top: 8rem;
+} */
+
 .detail__poster {
     display: flex;
     justify-content: center;
@@ -40,7 +44,7 @@
 }
 
 .detail__backdrop {
-    height: 20rem;
+    height: 30rem;
     background-color: antiquewhite;
 }
 
