@@ -1,6 +1,6 @@
-/* .detail__container {
-    margin-top: 8rem;
-} */
+.detail__container {
+    margin-top: 6rem;
+}
 
 .detail__poster {
     display: flex;

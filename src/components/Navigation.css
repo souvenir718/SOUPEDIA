@@ -6,9 +6,21 @@
     text-align: center;
     height: 5rem;
     width: 100%;
-    padding: 0 10%;
+    padding: 0 15%;
     line-height: 5rem;
     margin-bottom: 2rem;
     box-shadow: rgb(0 0 0 / 8%) 0px 1px 0px 0px;
     border-bottom: 0.1px solid darkgrey;
+    background-color: white;
+}
+.header__logo {
+    float: left;
+    height: 5.5rem;
+}
+.header__github {
+    position: absolute;
+    height: 5rem;
+}
+.header__portfolio {
+    height: 5rem;
 }
