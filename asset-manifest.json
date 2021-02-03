@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/movie_app/static/css/main.1a02a01d.chunk.css",
-    "main.js": "/movie_app/static/js/main.6e4ceb15.chunk.js",
-    "main.js.map": "/movie_app/static/js/main.6e4ceb15.chunk.js.map",
-    "runtime-main.js": "/movie_app/static/js/runtime-main.ec1c9199.js",
-    "runtime-main.js.map": "/movie_app/static/js/runtime-main.ec1c9199.js.map",
-    "static/js/2.da4374dc.chunk.js": "/movie_app/static/js/2.da4374dc.chunk.js",
-    "static/js/2.da4374dc.chunk.js.map": "/movie_app/static/js/2.da4374dc.chunk.js.map",
-    "index.html": "/movie_app/index.html",
-    "static/css/main.1a02a01d.chunk.css.map": "/movie_app/static/css/main.1a02a01d.chunk.css.map",
-    "static/js/2.da4374dc.chunk.js.LICENSE.txt": "/movie_app/static/js/2.da4374dc.chunk.js.LICENSE.txt"
+    "main.css": "/soupedia/static/css/main.2876cbf5.chunk.css",
+    "main.js": "/soupedia/static/js/main.3091b7b2.chunk.js",
+    "main.js.map": "/soupedia/static/js/main.3091b7b2.chunk.js.map",
+    "runtime-main.js": "/soupedia/static/js/runtime-main.dc950c16.js",
+    "runtime-main.js.map": "/soupedia/static/js/runtime-main.dc950c16.js.map",
+    "static/js/2.abd981a6.chunk.js": "/soupedia/static/js/2.abd981a6.chunk.js",
+    "static/js/2.abd981a6.chunk.js.map": "/soupedia/static/js/2.abd981a6.chunk.js.map",
+    "index.html": "/soupedia/index.html",
+    "static/css/main.2876cbf5.chunk.css.map": "/soupedia/static/css/main.2876cbf5.chunk.css.map",
+    "static/js/2.abd981a6.chunk.js.LICENSE.txt": "/soupedia/static/js/2.abd981a6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ec1c9199.js",
-    "static/js/2.da4374dc.chunk.js",
-    "static/css/main.1a02a01d.chunk.css",
-    "static/js/main.6e4ceb15.chunk.js"
+    "static/js/runtime-main.dc950c16.js",
+    "static/js/2.abd981a6.chunk.js",
+    "static/css/main.2876cbf5.chunk.css",
+    "static/js/main.3091b7b2.chunk.js"
   ]
 }
