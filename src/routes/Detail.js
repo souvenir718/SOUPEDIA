@@ -3,6 +3,7 @@ import './Detail.css';
 import axios from 'axios';
 import Movie from '../components/Movie';
 import { Link, Redirect } from 'react-router-dom';
+import Similar from '../components/Similar';
 class Detail extends Component {
     state = {
         isLoading: true,
@@ -89,17 +90,7 @@ class Detail extends Component {
                             <h2>🎥 Similar Movies</h2>
                             <div className="detail__similars">
                                 {similars.map((movie) => (
-                                    <div key={movie.id} className="similar">
-                                        <div className="similar__poster">
-                                            <img
-                                                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                                                alt={movie.title}
-                                                title={movie.title}
-                                            />
-                                        </div>
-                                        <span className="similar__title">{movie.title}</span>
-                                        <span className="similar__rating">⭐ {movie.vote_average} / 10</span>
-                                    </div>
+                                    <Similar movie={movie} />
                                 ))}
                             </div>
                         </div>

@@ -1,0 +1,22 @@
+.similar {
+    display: flex;
+    flex-direction: column;
+    width: 11rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.similar__poster img {
+    width: 11rem;
+}
+
+.similar__title,
+.similar__rating {
+    font-weight: bold;
+}
+
+.similar__rating {
+    color: rgb(255, 47, 110);
+}
