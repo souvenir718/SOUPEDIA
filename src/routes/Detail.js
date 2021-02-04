@@ -1,16 +1,28 @@
 import React, { Component } from 'react';
 import './Detail.css';
 import axios from 'axios';
+import Movie from '../components/Movie';
+import { Link, Redirect } from 'react-router-dom';
 class Detail extends Component {
     state = {
         isLoading: true,
         movie: {},
+        similars: [],
     };
+
     getMovie = async (id) => {
         const { data } = await axios.get(
             `https://api.themoviedb.org/3/movie/${id}?api_key=ffe228ac6463158a2c4230ff91248853&language=en-US`
         );
-        this.setState({ movie: data, isLoading: false });
+
+        const {
+            data: { results },
+        } = await axios.get(
+            `https://api.themoviedb.org/3/movie/${id}/similar?api_key=ffe228ac6463158a2c4230ff91248853&language=en-US&page=1`
+        );
+
+        console.log(results);
+        this.setState({ movie: data, similars: results, isLoading: false });
     };
     componentDidMount() {
         const { location, history } = this.props;
@@ -20,8 +32,8 @@ class Detail extends Component {
         this.getMovie(location.state.id);
     }
     render() {
-        const { isLoading, movie } = this.state;
-        console.log(movie);
+        const { isLoading, movie, similars } = this.state;
+        // console.log(movie);
         return (
             <div>
                 {isLoading ? (
@@ -48,7 +60,7 @@ class Detail extends Component {
                                         {movie.release_date.slice(0, 4)} •{' '}
                                         {movie.production_countries ? movie.production_countries.map((country) => country.name) : null}
                                     </h3>
-                                    <h3 className="data__rating">🏆 {movie.vote_average} / 10</h3>
+                                    <h3 className="data__rating">⭐ {movie.vote_average} / 10</h3>
                                     <a href={movie.homepage} className="data_homepage">
                                         🎬 Homepage
                                     </a>
@@ -74,6 +86,22 @@ class Detail extends Component {
                                 {Math.floor(movie.runtime / 60)}시간 {movie.runtime % 60}분
                             </p>
                             <p className="info__overview">{movie.overview}</p>
+                            <h2>🎥 Similar Movies</h2>
+                            <div className="detail__similars">
+                                {similars.map((movie) => (
+                                    <div key={movie.id} className="similar">
+                                        <div className="similar__poster">
+                                            <img
+                                                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                                                alt={movie.title}
+                                                title={movie.title}
+                                            />
+                                        </div>
+                                        <span className="similar__title">{movie.title}</span>
+                                        <span className="similar__rating">⭐ {movie.vote_average} / 10</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 )}

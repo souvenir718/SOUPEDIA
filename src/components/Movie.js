@@ -11,16 +11,17 @@ function Movie({ id, year, title, summary, poster, backdrop_path, rating }) {
             </div>
             <div className="movie__data">
                 <Link
+                    // to={`/movie/${id}`}
                     to={{
                         pathname: `/movie/${id}`,
                         state: {
                             id,
-                            onlyYear,
-                            title,
-                            summary,
-                            poster,
-                            backdrop_path,
-                            rating,
+                            // onlyYear,
+                            // title,
+                            // summary,
+                            // poster,
+                            // backdrop_path,
+                            // rating,
                         },
                     }}
                 >
