@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SOUPEDIA/static/css/main.fdcca73f.chunk.css",
+    "main.css": "/SOUPEDIA/static/css/main.b11810fd.chunk.css",
     "main.js": "/SOUPEDIA/static/js/main.1612590d.chunk.js",
     "main.js.map": "/SOUPEDIA/static/js/main.1612590d.chunk.js.map",
     "runtime-main.js": "/SOUPEDIA/static/js/runtime-main.2e6075a5.js",
@@ -8,13 +8,13 @@
     "static/js/2.3a2bb83d.chunk.js": "/SOUPEDIA/static/js/2.3a2bb83d.chunk.js",
     "static/js/2.3a2bb83d.chunk.js.map": "/SOUPEDIA/static/js/2.3a2bb83d.chunk.js.map",
     "index.html": "/SOUPEDIA/index.html",
-    "static/css/main.fdcca73f.chunk.css.map": "/SOUPEDIA/static/css/main.fdcca73f.chunk.css.map",
+    "static/css/main.b11810fd.chunk.css.map": "/SOUPEDIA/static/css/main.b11810fd.chunk.css.map",
     "static/js/2.3a2bb83d.chunk.js.LICENSE.txt": "/SOUPEDIA/static/js/2.3a2bb83d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2e6075a5.js",
     "static/js/2.3a2bb83d.chunk.js",
-    "static/css/main.fdcca73f.chunk.css",
+    "static/css/main.b11810fd.chunk.css",
     "static/js/main.1612590d.chunk.js"
   ]
 }
